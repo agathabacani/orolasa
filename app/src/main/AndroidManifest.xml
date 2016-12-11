@@ -19,7 +19,10 @@
         </activity>
         <activity android:name=".Account_Forms" />
         <activity android:name=".form" />
-        <activity android:name=".ticket"></activity>
+        <activity android:name=".ticket" />
+        <activity android:name=".Ticket_mainBody" />
+        <activity android:name=".mainpayment" />
+        <activity android:name=".hourslist"></activity>
     </application>
 
 </manifest>

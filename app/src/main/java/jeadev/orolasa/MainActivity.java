@@ -1,5 +1,6 @@
 package jeadev.orolasa;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,7 +21,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     Button btn_submit;
     TextView txt_license_number,txt_maiden_name,txt_birdate;
     @Override
@@ -36,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 Config.lincenseID=txt_license_number.getText().toString();
-                String url = Config.URL("validateuser")+"?source=1&maidenName='"+txt_maiden_name.getText().toString()+"'&birthDate='"+txt_birdate.getText().toString()+"'&licenseNumber='"+txt_license_number.getText().toString()+"'";
+                String url = Config.URL("validateuser")+"?source=1&maidenName='Marimar'&birthDate='2016-12-12'&licenseNumber='l00-00-0001'";
+
+                Config.lincenseID="l00-00-0001";
                 JsonArrayRequest jsObjRequest = new JsonArrayRequest(url,
                         new Response.Listener<JSONArray>() {
                             @Override

@@ -1,5 +1,6 @@
 package jeadev.orolasa;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +22,7 @@ import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 
-public class Account_Forms extends AppCompatActivity {
+public class Account_Forms extends Activity {
     Button btn_renew_now;
     TextView lbl_full_name,lbl_address,lbl_date,lbl_license_number;
     @Override
@@ -69,7 +70,8 @@ public class Account_Forms extends AppCompatActivity {
                     rq.start();
                 }else{
                 Intent startmainactivity=new Intent(getApplicationContext(),form.class);
-                startActivity(startmainactivity);}
+                startActivity(startmainactivity);
+                }
             }
         });
     }

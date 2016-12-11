@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="jeadev.orolasa.mainpayment"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="top|bottom">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Schedule for Appointment"
+            android:id="@+id/lbl_days_hours"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="#00ffffff">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:id="@+id/btn_m"
+            android:background="#00ffffff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:id="@+id/btn_t"
+            android:background="#00ffffff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:id="@+id/btn_w"
+            android:background="#00ffffff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TH"
+            android:id="@+id/btn_th"
+            android:background="#00ffffff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:id="@+id/btn_f"
+            android:background="#00ffffff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:id="@+id/btn_s"
+            android:background="#00ffffff" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="#00ffffff"
+        android:scrollIndicators="bottom">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff">
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="8 : 00 am - 9 : 00 am"
+        android:id="@+id/button1"
+        android:background="#00ffffff"
+        android:backgroundTint="#00ffffff" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="9 : 00 am - 10 : 00 am"
+        android:id="@+id/button2"
+        android:background="#00ffffff" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="10 : 00 am - 11 : 00 am"
+        android:id="@+id/button3"
+        android:background="#00ffffff" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="11 : 00 am - 12 : 00 am"
+        android:id="@+id/button4"
+        android:background="#00ffffff" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="1 : 00 pm - 2 : 00 pm"
+        android:id="@+id/button6"
+        android:background="#00ffffff" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="1 : 00 pm - 2 : 00 pm"
+        android:id="@+id/button7"
+        android:background="#00ffffff" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="2 : 00 pm - 3 : 00 pm"
+        android:id="@+id/button8"
+        android:background="#00ffffff" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="3 : 00 pm - 4 : 00 pm"
+        android:id="@+id/button9"
+        android:background="#00ffffff" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="4 : 00 pm - 5 : 00 pm"
+        android:id="@+id/button10"
+        android:background="#00ffffff" />
+    </LinearLayout></ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="67dp"
+        android:text="Submit Appointment"
+        android:id="@+id/button5"
+        android:background="#00ffffff" />
+
+</LinearLayout>

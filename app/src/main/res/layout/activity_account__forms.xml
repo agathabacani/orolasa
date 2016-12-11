@@ -10,7 +10,9 @@
     tools:context="jeadev.orolasa.Account_Forms"
     android:weightSum="1"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:baselineAligned="false"
+    android:background="@drawable/back">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -22,7 +24,7 @@
             android:id="@+id/imageView"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:src="@android:drawable/sym_def_app_icon"
+            android:src="@drawable/image"
             android:scaleType="fitXY"
             android:layout_weight="0.36"
             android:layout_gravity="center" />
@@ -65,8 +67,16 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Renew Now!"
+        android:text="Set Appointment"
         android:id="@+id/btn_renew_now"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View History"
+        android:id="@+id/button"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
 

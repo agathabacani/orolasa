@@ -13,4 +13,7 @@ public class Config {
     public static String lincenseID="";
     public static String Message="";
     public static String Last_year="";
+
+    public static String Token="";
+    public static String Amount="";
 }

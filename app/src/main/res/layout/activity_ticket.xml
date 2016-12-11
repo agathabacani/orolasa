@@ -2,14 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/back">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Last Date Paid: 2011-12-31 \nYear Failed to Pay:2 \nTotal Penalty:150.00 Php\n"
-        android:id="@+id/txt_data" />
+        android:id="@+id/txt_data"
+        android:layout_marginBottom="4dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +27,7 @@
         android:id="@+id/lbl_code"
         android:textStyle="bold"
         android:typeface="sans"
-        android:layout_marginBottom="3dp" />
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:layout_width="fill_parent"
