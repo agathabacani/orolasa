@@ -22,7 +22,8 @@
         <activity android:name=".ticket" />
         <activity android:name=".Ticket_mainBody" />
         <activity android:name=".mainpayment" />
-        <activity android:name=".hourslist"></activity>
+        <activity android:name=".hourslist" />
+        <activity android:name=".Banking"></activity>
     </application>
 
 </manifest>

@@ -34,6 +34,7 @@ ListView _req_list_view;
     Button btn_m,btn_t,btn_w,btn_th,btn_f,btn_s;
     Button btn_1,btn_2,btn_3,btn_4,btn_6,btn_7,btn_8,btn_9,btn_10,btn_submit;
     TextView lbl_days_hours;
+    Button button5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,7 @@ ListView _req_list_view;
         btn_th=(Button)findViewById(R.id.btn_th);
         btn_f=(Button)findViewById(R.id.btn_f);
         btn_s=(Button)findViewById(R.id.btn_s);
-
+        button5=(Button)findViewById(R.id.button5);
         btn_1= (Button) findViewById(R.id.button1);
         btn_2=(Button)findViewById(R.id.button2);
         btn_3=(Button)findViewById(R.id.button3);
@@ -55,7 +56,13 @@ ListView _req_list_view;
         btn_8=(Button)findViewById(R.id.button8);
         btn_9=(Button)findViewById(R.id.button9);
         btn_10=(Button)findViewById(R.id.button10);
-
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent startmainactivity=new Intent(getApplicationContext(),Banking.class);
+                startActivity(startmainactivity);
+            }
+        });
        // btn_submit=(Button)findViewById(R.id.btn_submit_final_payment);
 /*
 *

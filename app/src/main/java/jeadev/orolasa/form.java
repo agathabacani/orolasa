@@ -33,7 +33,7 @@ import java.io.UnsupportedEncodingException;
 public class form extends Activity {
 ImageButton btn_md,btn_el;Button btn_submit_form;
     EditText txt_presentAddress,txt_height,txt_weight;
-    RadioButton rdn_ds;
+    //RadioButton rdn_ds;
     String  Message="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +41,11 @@ ImageButton btn_md,btn_el;Button btn_submit_form;
         setContentView(R.layout.activity_form);
 //        btn_el=(ImageButton)findViewById(R.id.btn_el);
 //        btn_md=(ImageButton)findViewById(R.id.btn_md);
-        btn_submit_form=(Button)findViewById(R.id.btn_submit_form);
+      //  btn_submit_form=(Button)findViewById(R.id.btn_submit_form);
         txt_weight=(EditText)findViewById(R.id.weight);
         txt_presentAddress=(EditText)findViewById(R.id.txt_presentAddress);
         txt_height=(EditText)findViewById(R.id.txt_height);
-        rdn_ds=(RadioButton)findViewById(R.id.rdn_ds);
+      //  rdn_ds=(RadioButton)findViewById(R.id.rdn_ds);
 //
 //        btn_md.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -135,7 +135,7 @@ ImageButton btn_md,btn_el;Button btn_submit_form;
             @Override
             public void onClick(View view) {
 
-                int ischeck=rdn_ds.isChecked()?1:0;
+                int ischeck=1;
                 String url = Config.URL("update_form")+"?source=1&presentAddress='"+txt_presentAddress.getText().toString()+"'&height='"+txt_height.getText().toString()+"'&weight='"+txt_weight.getText().toString()+"'&dsa='"+ischeck+"'&licenseNumber='"+Config.lincenseID+"'";
 
                 JsonObjectRequest jsObjRequest = new JsonObjectRequest
@@ -176,10 +176,5 @@ ImageButton btn_md,btn_el;Button btn_submit_form;
 
             }
         });
-    }
-    public byte[] getBytesFromBitmap(Bitmap bitmap) {
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
-        return stream.toByteArray();
     }
 }

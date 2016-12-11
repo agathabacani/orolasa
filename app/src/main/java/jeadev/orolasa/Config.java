@@ -5,7 +5,7 @@ package jeadev.orolasa;
  */
 public class Config {
 
-    public static String ip="192.168.1.101";
+    public static String ip="192.168.43.12";
     public  static  String URL(String php_name){
         return  "http://"+ip+"/UB/"+php_name+".php";
     }
